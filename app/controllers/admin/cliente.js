@@ -83,7 +83,6 @@ exports.getClientes = (req, res, next) => {
                 .skip((currentPage - 1) * ITEMS_PER_PAGE)
                 .limit(ITEMS_PER_PAGE)
                 .sort({
-                    $natural: -1,
                     ativo: -1
                 })
                 .then(clientes => {
