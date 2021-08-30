@@ -163,7 +163,7 @@ exports.getPropiedade = (req, res, next) => {
                         return res.render('shop/propriedade', {
                             pageTitle: prop.youtube_id,
                             prop: prop,
-                            mapURI: `Rua ${prop.rua}, numero ${prop.numero}. Bairro${prop.bairro}. CEP: ${prop.cep}`,
+                            mapURI: `${prop.rua}, ${prop.numero}. Bairro: ${prop.bairro}.`,
                             path: "/propiedade",
                             robotsFollow: true,
                             sobre: sobre,
